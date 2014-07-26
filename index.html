@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tlon&#39;s backyard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tlon's backyard">
+<meta property="og:url" content="http://yoursite.com/">
+<meta property="og:site_name" content="Tlon's backyard">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tlon's backyard">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Tlon&#39;s backyard" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Tlon&#39;s backyard</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Beyong zenith</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">存档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-libvirt-proj-conclusion" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/07/26/libvirt-proj-conclusion/" class="article-date">
+  <time datetime="2014-07-26T07:44:22.000Z" itemprop="datePublished">7月 26 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/07/26/libvirt-proj-conclusion/">libvirt 使用总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="前言">前言</h4>
+<p>很久很久没有写过博客，因为从本科毕业开始就几乎没闲着，每次有点时间想写点什么的时候，<br>也总是突然发觉不知道从何写起。最近看了<a href="http://mindhacks.cn/" target="_blank" rel="external">刘未鹏博客</a>中的一篇文章《为什么你应该（从现在开始就）写博客》，觉得有些东西还是要写出来。</p>
+<h4 id="libvrit是什么">libvrit是什么</h4>
+<p>在libvirt官网上找到这几句话，我想足以表达libvirt是用来做什么的<br>A toolkit to interact with the virtualization capabilities of recent versions of Linux (and other OSes),the goal of libvirt: <strong>to provide a common and stable layer sufficient to securely manage domains on a node, possibly remote.</strong></p>
+<h4 id="_"> </h4>
+<p>我最近的工作是要对运行在host上的domain进行动态的迁移，以缓解某个host过载的情况，当前版本的工作是设计并开发出一个人工执行负载均衡的模块。<br>花了一天时间看了看libvirt的介绍和文档，稍微了解了一下实验室项目的结构，就开始着手这个模块的设计了。最初我以为libvirt这么高级的东东，只要调用个函数就可以了。其实不然啊，还是我太天真。直接调用函数有90%的可能是运行报错，就算你运气好误打误撞的跑起来了，估计迁移完你虚拟机也跪了。那么，在什么样的情况下，才能迁移呢？<br>
+        
+          <p class="article-more-link">
+            <a href="/2014/07/26/libvirt-proj-conclusion/#more">阅读全文</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/07/26/libvirt-proj-conclusion/" data-id="1uuekquyuske0ej5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常工作/">日常工作</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常工作/">日常工作</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/日常工作/" style="font-size: NaNpx;">日常工作</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07">七月 2014</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/07/26/libvirt-proj-conclusion/">libvirt 使用总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 Tlon&#39;s backyard<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">存档</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
